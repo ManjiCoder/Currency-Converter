@@ -6,7 +6,7 @@ type CurrencyButtonProps = PropsWithChildren<{
   name: string;
   flag: string;
 }>;
-const CurrencyButton = (props: CurrencyButtonProps) => {
+const CurrencyButton = (props: CurrencyButtonProps): JSX.Element => {
   return (
     <View style={styles.buttonContainer}>
       <Text style={styles.flag}>{props.name}</Text>
