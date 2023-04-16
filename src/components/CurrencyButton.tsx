@@ -9,8 +9,8 @@ type CurrencyButtonProps = PropsWithChildren<{
 const CurrencyButton = (props: CurrencyButtonProps): JSX.Element => {
   return (
     <View style={styles.buttonContainer}>
-      <Text style={styles.flag}>{props.name}</Text>
-      <Text style={styles.country}>{props.flag}</Text>
+      <Text style={styles.flag}>{props.flag}</Text>
+      <Text style={styles.country}>{props.name}</Text>
     </View>
   );
 };
@@ -19,6 +19,8 @@ export default CurrencyButton;
 
 const styles = StyleSheet.create({
   buttonContainer: {
+    flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
   },
   flag: {
@@ -29,5 +31,6 @@ const styles = StyleSheet.create({
   country: {
     fontSize: 14,
     color: '#2d3436',
+    fontWeight: '700',
   },
 });
